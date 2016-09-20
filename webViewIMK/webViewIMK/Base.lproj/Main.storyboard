@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Yi0-x7-MXf">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="3mu-xK-uPY">
+            <objects>
+                <viewController id="Yi0-x7-MXf" customClass="IMKViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Toe-3A-dST"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Yb-yS-GfX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cl7-Ui-9im">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3uR-yC-04F">
+                                <frame key="frameInset" minX="49" minY="134" width="315" height="383"/>
+                            </scrollView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ixo-9b-3T4">
+                                <frame key="frameInset" minX="164" minY="75" width="150" height="2"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ixo-9b-3T4" secondAttribute="trailing" id="1zh-Vu-wD1"/>
+                            <constraint firstItem="9Yb-yS-GfX" firstAttribute="top" secondItem="3uR-yC-04F" secondAttribute="bottom" id="641-9s-bsN"/>
+                            <constraint firstItem="ixo-9b-3T4" firstAttribute="top" secondItem="Toe-3A-dST" secondAttribute="bottom" id="AO0-tS-Xur"/>
+                            <constraint firstAttribute="trailing" secondItem="3uR-yC-04F" secondAttribute="trailing" id="I8L-yI-NUw"/>
+                            <constraint firstItem="ixo-9b-3T4" firstAttribute="leading" secondItem="Cl7-Ui-9im" secondAttribute="leading" id="Qxw-qe-V2f"/>
+                            <constraint firstItem="3uR-yC-04F" firstAttribute="leading" secondItem="Cl7-Ui-9im" secondAttribute="leading" id="iOj-Jx-x6y"/>
+                            <constraint firstItem="3uR-yC-04F" firstAttribute="top" secondItem="Toe-3A-dST" secondAttribute="bottom" id="sul-Jz-5Fj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="ixo-9b-3T4" id="UYX-8C-VQ1"/>
+                        <outlet property="scrollerView" destination="3uR-yC-04F" id="N1w-cw-Qak"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qzb-hN-Eyp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-750.72463768115949" y="-14.673913043478262"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="s85-ct-wMW">
+                                <frame key="frameInset" minX="87" minY="118" width="150" height="2"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="s85-ct-wMW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="R9T-DW-xiA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="s85-ct-wMW" secondAttribute="trailing" constant="-20" id="WkB-lh-rEG"/>
+                            <constraint firstItem="s85-ct-wMW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Yl9-Fo-7Zm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lSd-Ep-viI"/>
+                    <connections>
+                        <outlet property="progressView" destination="s85-ct-wMW" id="XAb-QM-0DM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1559" y="-7"/>
+        </scene>
+    </scenes>
+</document>
